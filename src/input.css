@@ -75,7 +75,7 @@ button:focus-visible {
 }
 
 .fade-in {
-  animation: fadeIn 1000ms ease-in-out;
+  animation: fadeIn 500ms ease-in-out;
 }
 @keyframes rotation180 {
   from {
