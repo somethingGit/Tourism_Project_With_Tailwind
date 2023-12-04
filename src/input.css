@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
   
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #FFFFFF;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #FFFFFF;
   
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
   
 h1 {
   font-size: 3.2em;
@@ -45,9 +45,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,6 +67,7 @@ button:focus-visible {
     background-color: #2a2828;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -77,6 +80,11 @@ button:focus-visible {
 .fade-in {
   animation: fadeIn 500ms ease-in-out;
 }
+
+.parent:hover .child{
+  animation: rotation180 500ms forwards;
+}
+
 @keyframes rotation180 {
   from {
     transform: rotate(0deg);
@@ -85,15 +93,14 @@ button:focus-visible {
     transform: rotate(180deg);
   }
 }
-.parent:hover .child{
-  animation: rotation180 500ms forwards;
-}
+
 .crop {
   width: 100vh;
   height: 100vh;
   overflow:hidden;
   position:relative;
 }
+
 .crop img {
   position:relative;
   top: 50vh;
@@ -104,4 +111,20 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 100ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.group:hover::after {
+  width: 100%;
 }
