@@ -560,11 +560,6 @@ video {
   margin-bottom: 3rem;
 }
 
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -610,12 +605,12 @@ video {
   width: 75%;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[2\/10\] {
   width: 2/10;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .transform {
