@@ -78,7 +78,7 @@ button:focus-visible {
 }
 
 .fade-in {
-  animation: fadeIn 500ms ease-in-out;
+  animation: fadeIn 1000ms ease-in-out;
 }
 
 .parent:hover .child{
@@ -127,4 +127,17 @@ img {
 
 .group:hover::after {
   width: 100%;
+}
+
+.animate-up {
+  animation: up 500ms ease-in-out;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
