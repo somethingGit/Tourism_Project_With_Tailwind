@@ -565,8 +565,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -575,10 +583,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .mt-5 {
@@ -639,14 +643,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[10\/12\] {
-  width: 10/12;
-}
-
-.w-\[9\/12\] {
-  width: 9/12;
 }
 
 .transform {
@@ -743,37 +739,9 @@ video {
   font-size: 10px;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -903,7 +871,7 @@ button:focus-visible {
 }
 
 .fade-in {
-  animation: fadeIn 1000ms ease-in-out;
+  animation: fadeIn 1.25s ease-in-out;
 }
 
 .parent:hover .child{
@@ -948,7 +916,7 @@ img {
   width: 0;
   height: 2px;
   background: black;
-  transition: width 100ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .group:hover::after {
@@ -956,7 +924,7 @@ img {
 }
 
 .animate-up {
-  animation: up 500ms ease-in-out;
+  animation: up 750ms ease-in-out;
 }
 
 @keyframes up {
